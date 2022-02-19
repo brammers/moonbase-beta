@@ -1,0 +1,12 @@
+name: Moonbase Beta - Puhlish Disk
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Zip SSD
+        run: 'zip -ur Moonbase_Beta.zip "Moonbase Beta - Author\'s edition.ssd"'
