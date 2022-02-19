@@ -8,5 +8,3 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Zip SSD
-        run: 'zip -ur Moonbase_Beta.zip "Moonbase Beta - Author\'s edition.ssd"'
