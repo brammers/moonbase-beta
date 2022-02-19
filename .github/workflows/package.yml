@@ -11,3 +11,8 @@ jobs:
 
       - name: Zip SSD
         run: zip -ur Moonbase_Beta.zip *.ssd
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: Moonbase_Beta_Zip
+          path: Moonbase_Beta.zip
